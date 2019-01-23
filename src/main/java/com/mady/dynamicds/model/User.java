@@ -5,10 +5,10 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.util.Date;
- 
+
 /**
- * user实体类
- * Created by pure on 2018-05-06.
+ * @author mady
+ * @date 2018/11/06
  */
 @Data
 @AllArgsConstructor

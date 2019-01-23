@@ -16,8 +16,8 @@ import java.util.HashMap;
 import java.util.Map;
  
 /**
- * 多数据源配置类
- * Created by pure on 2018-05-06.
+ * @author mady
+ * @date 2018/11/06
  */
 @Configuration
 public class DataSourceConfig {
@@ -58,8 +58,8 @@ public class DataSourceConfig {
     @ConfigurationProperties(prefix = "mybatis")
     public SqlSessionFactoryBean sqlSessionFactoryBean() throws IOException {
         SqlSessionFactoryBean sqlSessionFactoryBean = new SqlSessionFactoryBean();
-        // Here to config mybatis
-        sqlSessionFactoryBean.setTypeAliasesPackage("com.springboot.dao");
+        // Here to config mybatis (可以再配置文件中设置 ， 也可采用默认设置)
+        sqlSessionFactoryBean.setTypeAliasesPackage("com.mady.dynamicds.mapper");
         sqlSessionFactoryBean.setMapperLocations(new PathMatchingResourcePatternResolver().getResources("mapper/*.xml"));
         // Here is very important, if don't config this, will can't switch datasource
         // put all datasource into SqlSessionFactoryBean, then will autoconfig SqlSessionFactory

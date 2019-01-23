@@ -11,7 +11,8 @@ import org.springframework.stereotype.Component;
 import java.lang.reflect.Method;
 /**
  * 自定义注解 + AOP的方式实现数据源动态切换。
- * Created by pure on 2018-05-06.
+ * @author mady
+ * @date 2018/11/06
  */
 @Aspect
 @Component

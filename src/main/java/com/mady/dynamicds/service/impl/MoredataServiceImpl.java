@@ -5,14 +5,21 @@ import com.mady.dynamicds.mapper.MoredataMapper;
 import com.mady.dynamicds.model.User;
 import com.mady.dynamicds.service.MoredataService;
 import org.springframework.stereotype.Service;
-
+/**
+ * @author mady
+ * @date 2018/11/06
+ */
 import javax.annotation.Resource;
 import java.util.List;
 
+/**
+ * @author mady
+ * @date 2018/11/06
+ */
 @Service
 public class MoredataServiceImpl implements MoredataService {
 
-    @Resource
+    @Resource //moredataDao 与接口名称对应不上 使用@Resource 注解 或者使用@Autowired @Qualifier
     private MoredataMapper moredataDao;
 
     @Override

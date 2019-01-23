@@ -8,11 +8,11 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Date;
 import java.util.List;
- 
+
 /**
- * Created by pure on 2018-05-06.
+ * @author mady
+ * @date 2018/11/06
  */
-//@CrossOrigin
 @RestController
 @RequestMapping("/moredata")
 public class MoredataController {

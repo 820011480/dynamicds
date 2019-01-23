@@ -7,6 +7,8 @@ import java.lang.annotation.Target;
  
 /**
  * 自定义注解
+ * @author mady
+ * @date 2018/11/06
  */
 @Retention(RetentionPolicy.RUNTIME)
 @Target({ElementType.METHOD})
